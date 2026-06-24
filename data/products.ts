@@ -1,0 +1,7 @@
+export type Product={_id?:string;id?:number;name:string;category:string;gender:string;price:number;oldPrice?:number;description:string;sizes:string[];colors:string[];image:string;quantity:number;featured:boolean};
+export const starterProducts:Product[]=[
+{id:1,name:"Premium Oversized Hoodie",category:"Hoodies",gender:"Unisex",price:350,oldPrice:420,description:"Luxury oversized hoodie for students and workers.",sizes:["S","M","L","XL","XXL"],colors:["Black","Cream","Brown"],image:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=900",quantity:20,featured:true},
+{id:2,name:"Classic Office Shirt",category:"Shirts",gender:"Men",price:220,description:"Clean modern office shirt for workers and classy casual events.",sizes:["S","M","L","XL"],colors:["White","Blue","Black"],image:"https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=900",quantity:35,featured:true},
+{id:3,name:"Elegant Ladies Dress",category:"Dresses",gender:"Women",price:480,description:"Elegant dress suitable for church, dinner, work and special outings.",sizes:["S","M","L","XL"],colors:["Black","Gold","Red"],image:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=900",quantity:15,featured:true},
+{id:4,name:"Luxury Sneakers",category:"Shoes",gender:"Unisex",price:520,description:"Modern sneakers for campus, office and casual fashion.",sizes:["39","40","41","42","43","44"],colors:["White","Black"],image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=900",quantity:18,featured:false}
+];

@@ -1,0 +1,3 @@
+"use client";
+import ProductCard from"@/components/ProductCard";import{useProducts}from"@/context/ProductContext";
+export default function ShopPage(){const{products,loading}=useProducts();return <main className="mx-auto max-w-7xl px-5 py-12"><div className="mb-10"><p className="text-gold">SHOP ALL</p><h1 className="text-5xl font-black">Luxury Collection</h1><p className="mt-4 text-white/70">Browse clothes for students, workers, ladies and men.</p></div>{loading&&<p className="mb-5 text-white/50">Loading database products...</p>}<div className="grid gap-6 md:grid-cols-4">{products.map(product=><ProductCard key={product._id||product.id} product={product}/>)}</div></main>}
